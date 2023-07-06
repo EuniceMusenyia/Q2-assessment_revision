@@ -78,11 +78,9 @@ catalog.update_copies("River", 5)
 available_copies = catalog.get_available_copies("River")
 print(f"Available copies of 'River': {available_copies}")
 
-# Print book details
 searched_books = catalog.search("River")
 for book in searched_books:
     print(book)
-    # print()
 
 
 
@@ -158,42 +156,41 @@ for book in searched_books:
 # confirmation = booking.generate_booking_confirmation("FL001")
 # print(confirmation)
 
-# # class Student:
-# #     def __init__(self, name, age, grades):
-# #         self.name = name
-# #         self.age = age
-# #         self.grades = grades
+class Student:
+    def __init__(self, name, age, grades):
+        self.name = name
+        self.age = age
+        self.grades = grades
 
-# #     def calculate_average_grade(self):
-# #         if not self.grades:
-# #             return 0
-# #         return sum(self.grades) / len(self.grades)
+    def calculate_average_grade(self):
+        if not self.grades:
+            return 0
+        return sum(self.grades) / len(self.grades)
 
-# #     def display_student_info(self):
-# #         print(f"Name: {self.name}")
-# #         print(f"Age: {self.age}")
-# #         print(f"Grades: {self.grades}")
+    def display_student_info(self):
+        return(f"Name: {self.name}")
+        return(f"Age: {self.age}")
+        return(f"Grades: {self.grades}")
 
-# #     def has_passed(self):
-# #         average_grade = self.calculate_average_grade()
-# #         return average_grade >= 60
+    def has_passed(self):
+        average_grade = self.calculate_average_grade()
+        return average_grade >= 60
 
 
-# # # Example usage
-# # student1 = Student("John Doe", 18, [75, 80, 65, 70])
-# # student1.display_student_info()
-# # average_grade1 = student1.calculate_average_grade()
-# # print(f"Average Grade: {average_grade1}")
-# # passed1 = student1.has_passed()
-# # print(f"Passed: {passed1}")
-# # print()
+student1 = Student("Becky", 60, [45, 80, 95, 40])
+student1.display_student_info()
+average_grade1 = student1.calculate_average_grade()
+print(f"Average Grade: {average_grade1}")
+passed1 = student1.has_passed()
+print(f"Passed: {passed1}")
+print()
 
-# # student2 = Student("Jane Smith", 20, [90, 85, 92, 88])
-# # student2.display_student_info()
-# # average_grade2 = student2.calculate_average_grade()
-# # print(f"Average Grade: {average_grade2}")
-# # passed2 = student2.has_passed()
-# # print(f"Passed: {passed2}")
+student2 = Student("Jannet", 80, [70, 98, 20, 78])
+student2.display_student_info()
+average_grade2 = student2.calculate_average_grade()
+print(f"Average Grade: {average_grade2}")
+passed2 = student2.has_passed()
+print(f"Passed: {passed2}")
 
 # # # # class Product:
 # # # #     def __init__(self, name, price, quantity):
